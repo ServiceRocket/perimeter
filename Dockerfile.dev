@@ -1,0 +1,21 @@
+# author: khailon
+# created: 2017-03-02
+FROM maven:3.3.9-jdk-8
+
+# Install required libraries to run Confluence integration test
+RUN apt-get update && apt-get -y install bash dbus firefox-esr fontconfig ttf-freefont xvfb
+
+# Download xvfb-run to provide simpler headless solution
+ADD https://gist.github.com/elbaschid/5a91271c07bb0de7bfa6/raw/d07b4eecf02fd3341ef72753e4c5875cf137bda8/xvfb-run.sh /usr/bin/xvfb-run
+RUN chmod u+x /usr/bin/xvfb-run
+
+# Create and set temporary workspace for the project
+RUN mkdir -p /tmp/workspace
+
+VOLUME "/root/.m2"
+VOLUME "/tmp/workspace"
+
+WORKDIR "/tmp/workspace"
+
+ENTRYPOINT ["/usr/bin/xvfb-run", "-a"]
+CMD ["/usr/bin/mvn", "clean", "install"]

@@ -1,0 +1,19 @@
+<tr bgcolor="ffffff">
+    <td>
+    <a name="customware-macro-secureinclude"/>
+{secure-include:id=something}<br/>
+    </td>
+    <td>
+        <p>
+        Allows a secure page to be imported into the current page for viewing by users
+        who might not be able to see it otherwise. Only a person who can see the secured
+         page can select the page to be viewed, but once activated, anyone who can view
+         the page the macro occurs on can see the content of the secure page. They cannot
+         modify the page however, or change the include to point at a different page in the
+         secure space.
+        </p>
+        <ul>
+        <li><b>id</b> - (required) An ID which is unique to this page to reference the include by.</li>
+        </ul>
+    </td>
+</tr>
