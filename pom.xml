@@ -11,7 +11,7 @@
 
     <groupId>net.customware.confluence.plugin.perimeter</groupId>
     <artifactId>perimeter-plugin</artifactId>
-    <version>4.3.0</version>
+    <version>4.3.1-SNAPSHOT</version>
     <packaging>atlassian-plugin</packaging>
 
     <name>Perimeter Plugin</name>
@@ -27,7 +27,7 @@
         <connection>scm:git:ssh://git@github.com/ServiceRocket/perimeter.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/ServiceRocket/perimeter.git</developerConnection>
         <url>https://github.com/ServiceRocket/perimeter</url>
-        <tag>4.3.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <repositories>
