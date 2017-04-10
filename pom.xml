@@ -13,11 +13,16 @@
 
     <groupId>net.customware.confluence.plugin.perimeter</groupId>
     <artifactId>perimeter-plugin</artifactId>
-    <version>4.0.1-SNAPSHOT</version>
+    <version>4.3.0-SNAPSHOT</version>
 
     <name>Perimeter Plugin</name>
     <url>http://docs.servicerocket.com/display/PERI/Perimeter+Plugin</url>
-    <description>An extension to Confluence providing secure viewing of a page.</description>
+    <description>
+        An extension to Confluence providing secure viewing of a page.&lt;br&gt; &lt;br&gt;
+
+        &lt;em&gt;Note: This add-on is now open-sourced. &lt;br&gt;
+        For compatibility updates, you can build from source code available at https://github.com/ServiceRocket/perimeter.&lt;/em&gt;
+    </description>
     <packaging>atlassian-plugin</packaging>
 
     <scm>
@@ -58,7 +63,7 @@
 
         <platform.name>confluence</platform.name>
         <platform.minVersion>5.8.2</platform.minVersion>
-        <platform.maxVersion>6.0.6</platform.maxVersion>
+        <platform.maxVersion>6.1.1</platform.maxVersion>
 
         <confluence.version>${platform.minVersion}</confluence.version>
         <confluence.data.version>${confluence.version}</confluence.data.version>
